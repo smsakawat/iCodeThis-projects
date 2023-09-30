@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Miriam Libre", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("https://cdn.wallpapersafari.com/43/89/JE8dXp.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-card {
+  background-color: #fff;
+  max-width: 450px;
+  border-radius: 1.6rem;
+  box-shadow: 0 4px 8px rgba(0 0 0 / 0.09);
+}
+
+.card-header {
+  padding: 1.6rem;
+  width: 100%;
+  height: 23rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.card-header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("https://jonnegroni.com/wp-content/uploads/2015/12/the_good_dinosaur_2015_movie-wide.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 79%, 0 99%);
+  clip-path: polygon(0 0, 100% 0%, 100% 79%, 0 99%);
+  border-top-left-radius: 1.6rem;
+  border-top-right-radius: 1.6rem;
+  transition: filter 0.3s linear;
+}
+
+.card-header:hover::before {
+  filter: brightness(70%);
+}
+
+.card-header div:first-child {
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.left-arrow,
+.share-btn {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #ebe9e9;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+
+.left-arrow:hover,
+.share-btn:hover {
+  color: #b4b4b4;
+}
+
+.card-header div:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating-info {
+  display: flex;
+  align-items: center;
+}
+
+.rating-info .star-icon {
+  margin-right: 1.6rem;
+  color: #ffc11a;
+  font-size: 3.6rem;
+}
+
+.rating-details {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.watch-btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  background-color: #ea0f2cbb;
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s;
+  z-index: 2;
+}
+
+.watch-btn i {
+  color: #ddd;
+  font-size: 2.4rem;
+}
+
+.watch-btn:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.26);
+}
+
+.card-content {
+  padding: 1.6rem;
+}
+
+.card-content h1 {
+  letter-spacing: -0.7px;
+  color: #205f98;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 0.4rem;
+}
+
+.tags-time-container {
+  margin-bottom: 0.8rem;
+}
+
+.card-content .tags,
+.card-content time {
+  color: #808080;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.card-content .movie-description {
+  line-height: 1.4;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #808080;
+  margin-bottom: 2.4rem;
+}
+
+.slider {
+  position: relative;
+}
+
+.slide-left,
+.slide-right {
+  color: #c4c3c3;
+  font-weight: bold;
+  font-size: 2.6rem;
+  cursor: pointer;
+}
+
+.slide-left {
+  position: absolute;
+  top: 50%;
+  left: 16%;
+  transform: translateY(-50%);
+}
+
+.slide-right {
+  position: absolute;
+  top: 50%;
+  right: 16%;
+  transform: translateY(-50%);
+}
+
+.actors-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.actors-info > p {
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  color: #656464;
+  font-weight: 800;
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+
+.actors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actors img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  position: relative;
+  object-fit: cover;
+  object-position: top;
+}
+
+#arlo {
+  width: 80px;
+  height: 80px;
+  z-index: 999;
+}
+
+.actors img:first-of-type {
+  margin-right: -1.2rem;
+}
+
+.actors img:last-of-type {
+  margin-left: -1.2rem;
+}
+
+.empty {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgb(241, 238, 238);
+}
+
+.empty:first-child {
+  margin-right: -3.4rem;
+}
+
+.empty:last-child {
+  margin-left: -3.4rem;
+}
+
+.actor-names p:first-child {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin: 0.8rem 0 0.4rem;
+}
+
+.actor-names p:last-child {
+  font-size: 1.4rem;
+}
+
+.card-footer {
+  background-color: #40ccdf;
+  display: flex;
+  justify-content: space-center;
+  border-bottom-left-radius: 1.6rem;
+  border-bottom-right-radius: 1.6rem;
+  -webkit-clip-path: polygon(0 0, 100% 22%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 22%, 100% 100%, 0 100%);
+}
+
+.card-footer button {
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  background-color: transparent;
+  cursor: pointer;
+  flex-grow: 1;
+  padding: 3.2rem 2.4rem 1.6rem;
+  z-index: 999;
+}
+
+.btn-bookmark,
+.btn-crew {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+  position: relative;
+}
+
+.bookmark-icon,
+.crew-icon {
+  font-size: 2.4rem;
+}
+
+.btn-bookmark::before,
+.btn-crew::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.5s ease-out;
+  background-color: transparent;
+  z-index: -1;
+}
+
+.btn-bookmark::before {
+  transform-origin: top left;
+  border-bottom-left-radius: 1.6rem;
+}
+
+.btn-crew::before {
+  transform-origin: top right;
+  border-bottom-right-radius: 1.6rem;
+}
+
+.btn-bookmark:hover::before {
+  transform: scale(1);
+  background-color: #39aebe;
+}
+
+.btn-crew:hover::before {
+  transform: scale(1);
+  background-color: #39aebe;
+}

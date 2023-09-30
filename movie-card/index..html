@@ -3,7 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Movie Card</title>
   </head>
-  <body></body>
+  <body>
+    <div class="movie-card">
+      <header class="card-header">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="left-arrow"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+            />
+          </svg>
+
+          <svg
+            class="share-btn"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+            />
+          </svg>
+        </div>
+        <div>
+          <div class="rating-info">
+            <span class="star"><i class="las la-star star-icon"></i></span>
+            <span class="rating-details">6.8/10</span>
+          </div>
+          <button class="watch-btn"><i class="las la-play"></i></button>
+        </div>
+      </header>
+      <div class="card-content">
+        <h1>The Good Dinosaur</h1>
+        <div class="tags-time-container">
+          <span class="tags">Animation, Adventure, Comedy | </span>
+          <time datetime="2015-11-25" title="USA">25 November 2015 (USA)</time>
+        </div>
+        <p class="movie-description">
+          In a world where dinosaurs and humans live side-by-side, an
+          Apatosaurus named Arlo makes an unlikely human friend.
+        </p>
+        <div class="slider">
+          <i class="las la-angle-left slide-left"></i>
+          <i class="las la-angle-right slide-right"></i>
+          <div class="actors-info">
+            <p>ACTORS</p>
+            <div class="actors">
+              <div class="empty"></div>
+              <img
+                class="sara"
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                alt="Sara"
+              />
+              <img
+                id="arlo"
+                src="https://m.media-amazon.com/images/M/MV5BNjE3MGY4ODYtMjA4Yy00YjNmLWJlMTQtMDExZDUwODMxODI1XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg"
+                alt="Young Arlo"
+              />
+              <img
+                class="sujan"
+                src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzN8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="Sujan"
+              />
+              <div class="empty"></div>
+            </div>
+            <div class="actor-names">
+              <p>Young Arlo</p>
+              <p>Jack McGraw</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="card-footer">
+        <button class="btn-bookmark">
+          <span><i class="lar la-bookmark bookmark-icon"></i></span>
+          <span>Add to Bookmark</span>
+        </button>
+        <button class="btn-crew">
+          <span><i class="las la-users crew-icon"></i></span
+          ><span>See full cast & crew</span>
+        </button>
+      </footer>
+    </div>
+  </body>
 </html>
