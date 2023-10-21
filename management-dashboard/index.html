@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Open+Sans:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .font-muli {
+        font-family: "Mulish", sans-serif;
+      }
+
+      .font-open {
+        font-family: "Open Sans", sans-serif;
+      }
+
+      input[type="checkbox"]:checked + label {
+        background-color: #4c6ae6;
+      }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body
+    class="bg-gray-50 w-full min-h-screen flex items-center justify-center p-4 text-slate-800 md:p-0 font-muli"
+  >
+    <div
+      class="min-w-6xl w-full md:w-auto bg-white flex gap-0 md:gap-6 rounded-lg mt-2 mb-4 shadow-md"
+    >
+      <div
+        class="w-20 md:24 lg:w-56 border-r border-r-gray-100 min-h-[450px] flex flex-col justify-between"
+      >
+        <div class="flex flex-col gap-6 px-2 py-6 lg:px-6 md:py-8">
+          <p
+            class="text-center md:text-left font-extrabold text-[#0A0E1C] text-4xl"
+          >
+            <span
+              class="inline-block cursor-pointer hover:scale-95 transition duration-300 font-open"
+              >S</span
+            >
+          </p>
+          <!-- Navigations -->
+          <nav>
+            <ul class="flex flex-col gap-1 list-style-none">
+              <li
+                class="p-2 lg:px-4 lg:pr-8 rounded-lg lg:rounded-full transition duration-200 bg-[#F4F9FF]"
+              >
+                <a
+                  href="#"
+                  class="flex flex-col lg:flex-row gap-1 lg:gap-2 items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    height="1.4rem"
+                  >
+                    <path
+                      d="M16.97 4.757a.999.999 0 0 0-1.918-.073l-3.186 9.554-2.952-6.644a1.002 1.002 0 0 0-1.843.034L5.323 12H2v2h3.323c.823 0 1.552-.494 1.856-1.257l.869-2.172 3.037 6.835c.162.363.521.594.915.594l.048-.001a.998.998 0 0 0 .9-.683l2.914-8.742.979 3.911A1.995 1.995 0 0 0 18.781 14H22v-2h-3.22l-1.81-7.243z"
+                    ></path>
+                  </svg>
+                  <span class="font-medium text-[10px] lg:text-base"
+                    >Dashboard</span
+                  >
+                </a>
+              </li>
+              <li
+                class="relative p-2 lg:px-4 lg:pr-8 rounded-lg z-10 lg:rounded-full overflow-hidden before:bg-[#F4F9FF] before:absolute before:inset-0 before:-z-10 before:scale-x-0 before:origin-left before:transition before:duration-200 before:ease-in hover:before:scale-x-100 hover:cursor-pointer"
+              >
+                <a
+                  href="#"
+                  class="flex flex-col lg:flex-row gap-1 md:gap-2 items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    height="1.4rem"
+                  >
+                    <path
+                      d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"
+                    ></path>
+                  </svg>
+                  <span class="font-medium text-[10px] lg:text-base"
+                    >Folders</span
+                  >
+                </a>
+              </li>
+              <li
+                class="relative p-2 lg:px-4 lg:pr-8 rounded-lg z-10 lg:rounded-full overflow-hidden before:bg-[#F4F9FF] before:absolute before:inset-0 before:-z-10 before:scale-x-0 before:origin-left before:transition before:duration-200 before:ease-in hover:before:scale-x-100 hover:cursor-pointer"
+              >
+                <a
+                  href="#"
+                  class="flex flex-col lg:flex-row gap-1 md:gap-2 items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    height="1.4rem"
+                  >
+                    <path
+                      d="M20 2H10c-1.103 0-2 .897-2 2v4H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2v-4h4c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zM4 20V10h10l.002 10H4zm16-6h-4v-4c0-1.103-.897-2-2-2h-4V4h10v10z"
+                    ></path>
+                  </svg>
+                  <span class="font-medium text-[10px] lg:text-base"
+                    >Projects</span
+                  >
+                </a>
+              </li>
+              <li
+                class="relative p-2 lg:px-4 lg:pr-8 rounded-lg z-10 lg:rounded-full overflow-hidden before:bg-[#F4F9FF] before:absolute before:inset-0 before:-z-10 before:scale-x-0 before:origin-left before:transition before:duration-200 before:ease-in hover:before:scale-x-100 hover:cursor-pointer"
+              >
+                <a
+                  href="#"
+                  class="flex flex-col lg:flex-row gap-1 md:gap-2 items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    height="1.4rem"
+                  >
+                    <path
+                      d="M5 22h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2h-2a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1H5c-1.103 0-2 .897-2 2v15c0 1.103.897 2 2 2zM5 5h2v2h10V5h2v15H5V5z"
+                    ></path>
+                    <path
+                      d="m11 13.586-1.793-1.793-1.414 1.414L11 16.414l5.207-5.207-1.414-1.414z"
+                    ></path>
+                  </svg>
+                  <span class="font-medium text-[10px] lg:text-base"
+                    >Tasks</span
+                  >
+                </a>
+              </li>
+              <li
+                class="relative p-2 lg:px-4 lg:pr-8 rounded-lg z-10 lg:rounded-full overflow-hidden before:bg-[#F4F9FF] before:absolute before:inset-0 before:-z-10 before:scale-x-0 before:origin-left before:transition before:duration-200 before:ease-in hover:before:scale-x-100 hover:cursor-pointer"
+              >
+                <a
+                  href="#"
+                  class="flex flex-col lg:flex-row gap-1 md:gap-2 items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    height="1.4rem"
+                  >
+                    <path
+                      d="M12 16c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.084 0 2 .916 2 2s-.916 2-2 						2-2-.916-2-2 .916-2 2-2z"
+                    ></path>
+                    <path
+                      d="m2.845 16.136 1 1.73c.531.917 1.809 1.261 2.73.73l.529-.306A8.1 8.1 0 0 0 9 19.402V20c0 1.103.897 2 2 					2h2c1.103 0 2-.897 2-2v-.598a8.132 8.132 0 0 0 1.896-1.111l.529.306c.923.53 2.198.188 2.731-.731l.999-1.729a2.001 2.001 0 0 	0-.731-2.732l-.505-.292a7.718 7.718 0 0 0 0-2.224l.505-.292a2.002 2.002 0 0 	0 .731-2.732l-.999-1.729c-.531-.92-1.808-1.265-2.731-.732l-.529.306A8.1 8.1 0 0 0 15 4.598V4c0-1.103-.897-2-2-2h-2c-1.103 0-2 .897-2 	2v.598a8.132 8.132 0 0 0-1.896 1.111l-.529-.306c-.924-.531-2.2-.187-2.731.732l-.999 1.729a2.001 2.001 0 0 0 .731 2.732l.505.292a7.683 7.683 	0 0 0 0 2.223l-.505.292a2.003 2.003 0 0 0-.731 2.733zm3.326-2.758A5.703 5.703 0 0 1 6 12c0-.462.058-.926.17-1.378a.999.999 0 0 	0-.47-1.108l-1.123-.65.998-1.729 1.145.662a.997.997 0 0 0 1.188-.142 6.071 6.071 0 0 1 2.384-1.399A1 1 0 0 0 11 5.3V4h2v1.3a1 1 0 0 	0 .708.956 6.083 6.083 0 0 1 2.384 1.399.999.999 0 0 0 1.188.142l1.144-.661 1 1.729-1.124.649a1 1 0 0 0-.47 1.108c.112.452.17.916.17 1.378 	0 .461-.058.925-.171 1.378a1 1 0 0 0 .471 1.108l1.123.649-.998 1.729-1.145-.661a.996.996 0 0 0-1.188.142 6.071 6.071 0 0 1-2.384 1.399A1 1 0 	0 0 13 18.7l.002 1.3H11v-1.3a1 1 0 0 0-.708-.956 6.083 6.083 0 0 1-2.384-1.399.992.992 0 0 0-1.188-.141l-1.144.662-1-1.729 1.124-.651a1 1 0 		0 0 .471-1.108z"
+                    ></path>
+                  </svg>
+                  <span class="font-medium text-[10px] lg:text-base"
+                    >Settings</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button
+          class="w-full flex flex-col lg:flex-row justify-start md:justify-between items-center gap-2 px-2 py-1 lg:px-6 lg:py-4 rounded-bl-lg border-t border-t-gray-100 transition duration-200 hover:bg-gray-100"
+        >
+          <span class="flex items-center gap-2 flex-col lg:flex-row">
+            <img
+              src="https://images.pexels.com/photos/9038661/pexels-photo-9038661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+              class="w-10 h-10 rounded-full object-cover object-center"
+            />
+            <p class="text-[12px] lg:text-sm font-medium">Sopia Lee</p>
+          </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 28 28"
+            fill="none"
+          >
+            <circle cx="14" cy="14" r="14" fill="#F1F5FA" />
+            <path
+              d="M11.5 9L16.5 14L11.5 19"
+              stroke="#5D86F4"
+              stroke-width="1.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="flex-1 p-8 flex flex-col gap-8">
+        <div
+          class="flex gap-4 justify-between items-center flex-col md:flex-row"
+        >
+          <div class="relative">
+            <input
+              type="text"
+              placeholder="Search"
+              class="relative w-64 py-2 pl-12 outline-none placeholder-font-semibold placeholder-text-sm rounded-full ring-1 ring-gray-300 focus:bg-slate-100 transition duration-150"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 28 28"
+              fill="none"
+              class="absolute left-5 top-2.5"
+            >
+              <g opacity="0.5">
+                <circle
+                  cx="11.6667"
+                  cy="11.6667"
+                  r="8.16667"
+                  stroke="#202842"
+                  stroke-width="1.75"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M24.5 24.5L17.5 17.5"
+                  stroke="#202842"
+                  stroke-width="1.75"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+          </div>
+          <div class="flex items-center gap-4 justify-end">
+            <span
+              class="inline-block p-3 rounded-full hover:bg-[#F4F9FF] cursor-pointer transition duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                viewBox="0 0 26 26"
+                fill="none"
+              >
+                <rect
+                  x="3.25"
+                  y="5.41666"
+                  width="19.5"
+                  height="15.1667"
+                  rx="2.16667"
+                  stroke="#202842"
+                  stroke-width="1.625"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3.25 7.58334L13 14.0833L22.75 7.58334"
+                  stroke="#202842"
+                  stroke-width="1.625"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <span
+              class="inline-block p-3 rounded-full hover:bg-[#F4F9FF] cursor-pointer transition duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                viewBox="0 0 26 26"
+                fill="none"
+              >
+                <path
+                  d="M10.8334 5.41667C10.8334 4.22005 11.8034 3.25 13 3.25C14.1967 3.25 15.1667 4.22005 15.1667 5.41667C17.7019 6.61543 19.3686 9.11543 19.5 11.9167V15.1667C19.6654 16.5325 20.4695 17.7387 21.6667 18.4167H4.33337C5.53058 17.7387 6.33471 16.5325 6.50004 15.1667V11.9167C6.63152 9.11543 8.29819 6.61543 10.8334 5.41667"
+                  stroke="#202842"
+                  stroke-width="1.625"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9.75 18.4167V19.5C9.75 21.2949 11.2051 22.75 13 22.75C14.7949 22.75 16.25 21.2949 16.25 19.5V18.4167"
+                  stroke="#202842"
+                  stroke-width="1.625"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <time
+              datetime="2023-10-20"
+              class="relative text-3xl font-semibold md:text-4xl"
+              >17:30
+              <span
+                class="absolute -bottom-6 right-0 text-[12px] text-slate-600"
+                >20 October</span
+              >
+            </time>
+          </div>
+        </div>
+        <div class="w-full flex flex-col md:flex-row gap-8">
+          <!-- Folders & Projects-->
+          <div class="flex flex-col gap-4">
+            <!-- Folders -->
+            <div class="flex flex-col gap-4">
+              <h2 class="text-sm font-bold uppercase">Recent Folders</h2>
+              <div class="grid grid-cols-3 gap-4">
+                <button
+                  class="relative flex flex-col gap-2 justify-center items-center w-32 aspect-square rounded-lg bg-[#F4F9FF] overflow-hidden z-20 before:absolute before:-z-10 before:inset-0 before:bg-blue-100 before:scale-0 before:origin-top-left hover:before:scale-100 before:transition-all before:duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="3.5rem"
+                    height="3.5rem"
+                    class="scale-120 fill-sky-500"
+                  >
+                    <path
+                      d="M20 5h-9.586L8.707 3.293A.997.997 0 0 0 8 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2z"
+                    ></path>
+                  </svg>
+                  <span class="text-sm font-bold">Invoices</span>
+                </button>
+                <button
+                  class="relative flex flex-col gap-2 justify-center items-center w-32 aspect-square rounded-lg bg-[#F4F9FF] overflow-hidden z-10 before:absolute before:-z-10 before:inset-0 before:bg-blue-100 before:scale-0 before:origin-top-left hover:before:scale-100 before:transition-all before:duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="3.5rem"
+                    height="3.5rem"
+                    class="scale-120 fill-sky-500"
+                  >
+                    <path
+                      d="M20 5h-9.586L8.707 3.293A.997.997 0 0 0 8 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2z"
+                    ></path>
+                  </svg>
+                  <span class="text-sm font-bold">Customers</span>
+                  <span class="absolute top-1 right-1 flex h-2 w-2">
+                    <span
+                      class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"
+                    ></span>
+                    <span
+                      class="relative inline-flex rounded-full h-2 w-2 bg-pink-500"
+                    ></span>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <!--  Projects -->
+            <div class="flex flex-col gap-4 py-12 md:py-20">
+              <h2 class="text-sm font-bold uppercase">Projects</h2>
+              <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                <div
+                  class="font-open px-4 py-3 flex items-start gap-4 bg-[#F4F9FF] rounded-lg cursor-pointer hover:ring-1 hover:ring-blue-300 hover:scale-105 transition duration-300"
+                >
+                  <div
+                    class="text-2xl w-12 h-12 flex shrink-0 items-center justify-center bg-white rounded-full text-violet-500 font-extrabold"
+                  >
+                    S
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-lg font-bold mb-3">Sintex</p>
+                    <div
+                      class="mb-0.5 rounded-3xl relative overflow-hidden h-[5px] bg-white before:absolute before:rounded-3xl before:inset-0 before:w-1/2 before:bg-gradient-to-r from-blue-600 to-cyan-300 before:shadow-2xl before:shadow-blue-700"
+                    ></div>
+                    <span class="text-[12px] font-thin font-muli">26/47</span>
+                  </div>
+                </div>
+                <div
+                  class="font-open px-4 py-3 flex items-start gap-4 bg-[#F4F9FF] rounded-lg cursor-pointer hover:ring-1 hover:ring-blue-300 hover:scale-105 transition duration-300"
+                >
+                  <div
+                    class="text-2xl w-12 h-12 flex shrink-0 items-center justify-center bg-white rounded-full text-pink-500 font-extrabold"
+                  >
+                    T
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-lg font-bold mb-3">Tetrion</p>
+                    <div
+                      class="mb-0.5 rounded-3xl relative overflow-hidden h-[5px] bg-white before:absolute before:rounded-3xl before:inset-0 before:w-1/3 before:bg-gradient-to-r from-blue-600 to-cyan-300 before:shadow-2xl before:shadow-blue-700"
+                    ></div>
+                    <span class="text-[12px] font-thin font-muli">7/21</span>
+                  </div>
+                </div>
+                <div
+                  class="font-open px-4 py-3 flex items-start gap-4 bg-[#F4F9FF] rounded-lg cursor-pointer hover:ring-1 hover:ring-blue-300 hover:scale-105 transition duration-300"
+                >
+                  <div
+                    class="text-2xl w-12 h-12 flex shrink-0 items-center justify-center bg-white rounded-full text-emerald-500 font-extrabold"
+                  >
+                    P
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-lg font-bold mb-3">Petron</p>
+                    <div
+                      class="mb-0.5 rounded-3xl relative overflow-hidden h-[5px] bg-white before:absolute before:rounded-3xl before:inset-0 before:w-10/12 before:bg-gradient-to-r from-blue-600 to-cyan-300 before:shadow-2xl before:shadow-blue-700"
+                    ></div>
+                    <span class="text-[12px] font-thin font-muli">14/16</span>
+                  </div>
+                </div>
+                <div
+                  class="py-4 md:py-0 rounded-lg ring-1 ring-gray-200 bg-white flex flex-col gap-1 items-center justify-center cursor-pointer hover:bg-[#F4F9FF] transition duration-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="w-8 h-8 fill-gray-300"
+                  >
+                    <path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path>
+                  </svg>
+                  <p class="text-slate-400 font-light text-[12px] font-muli">
+                    Add New
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tasks -->
+          <div class="flex flex-col gap-4">
+            <h2 class="text-sm font-bold uppercase">Your Tasks</h2>
+            <div
+              class="bg-[#F4F9FF] p-4 rounded-lg flex flex-col gap-3 font-muli w-auto lg:w-72 shrink-0"
+            >
+              <div
+                class="bg-white px-5 py-4 flex items-start gap-3 rounded-md hover:translate-x-2 hover:ring-1 hover:ring-slate-200 transition-full duration-300"
+              >
+                <div class="relative w-6 h-6 flex items-center justify-center">
+                  <input type="checkbox" id="task-1" class="opacity-0" />
+                  <label
+                    for="task-1"
+                    class="absolute inset-0 flex justify-center items-center rounded-full border border-gray-200 hover:cursor-pointer checkbox-label"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M4 10L8 14L16 6"
+                        stroke="white"
+                        stroke-width="1.71429"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </label>
+                </div>
+                <div class="flex-1 select-none">
+                  <p class="mb-3">Better quality favicon</p>
+                  <div class="flex justify-between">
+                    <p
+                      class="px-3 py-0.5 rounded-full bg-rose-500 text-[12px] text-white"
+                    >
+                      Design
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-white px-5 py-4 flex items-start gap-3 rounded-md hover:translate-x-2 hover:ring-1 hover:ring-slate-200 transition-full duration-300"
+              >
+                <div class="relative w-6 h-6 flex items-center justify-center">
+                  <input type="checkbox" id="task-2" class="opacity-0" />
+                  <label
+                    for="task-2"
+                    class="absolute inset-0 flex justify-center items-center rounded-full border border-gray-200 hover:cursor-pointer checkbox-label"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M4 10L8 14L16 6"
+                        stroke="white"
+                        stroke-width="1.71429"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </label>
+                </div>
+                <div class="flex-1 select-none">
+                  <p class="mb-3">Social accounts setup</p>
+                  <div class="flex justify-between">
+                    <p
+                      class="px-3 py-0.5 rounded-full bg-lime-500 text-[12px] text-white"
+                    >
+                      Marketing
+                    </p>
+                    <p class="flex items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <circle
+                          cx="10"
+                          cy="10"
+                          r="7.5"
+                          stroke="#202842"
+                          stroke-width="1.25"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M10 5.83331V9.99998L12.5 12.5"
+                          stroke="#202842"
+                          stroke-width="1.25"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="text-[12px]">12:30</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-white px-5 py-4 flex items-start gap-3 rounded-md hover:translate-x-2 hover:ring-1 hover:ring-slate-200 transition-full duration-300"
+              >
+                <div class="relative w-6 h-6 flex items-center justify-center">
+                  <input type="checkbox" id="task-3" class="opacity-0" />
+                  <label
+                    for="task-3"
+                    class="absolute inset-0 flex justify-center items-center rounded-full border border-gray-200 hover:cursor-pointer checkbox-label"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M4 10L8 14L16 6"
+                        stroke="white"
+                        stroke-width="1.71429"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </label>
+                </div>
+                <div class="flex-1 select-none">
+                  <p class="mb-3">Upgrade plan page</p>
+                  <div class="flex justify-between">
+                    <p
+                      class="px-3 py-0.5 rounded-full bg-indigo-500 text-[12px] text-white"
+                    >
+                      Development
+                    </p>
+                    <p class="flex items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <circle
+                          cx="10"
+                          cy="10"
+                          r="7.5"
+                          stroke="#202842"
+                          stroke-width="1.25"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M10 5.83331V9.99998L12.5 12.5"
+                          stroke="#202842"
+                          stroke-width="1.25"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="text-[12px]">14:30</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-white px-5 py-4 flex items-start gap-3 rounded-md hover:translate-x-2 hover:ring-1 hover:ring-slate-200 transition-full duration-300"
+              >
+                <div class="relative w-6 h-6 flex items-center justify-center">
+                  <input type="checkbox" id="task-4" class="opacity-0" />
+                  <label
+                    for="task-4"
+                    class="absolute inset-0 flex justify-center items-center rounded-full border border-gray-200 hover:cursor-pointer checkbox-label"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M4 10L8 14L16 6"
+                        stroke="white"
+                        stroke-width="1.71429"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </label>
+                </div>
+                <div class="flex-1 select-none">
+                  <p class="mb-3">Email templates</p>
+                  <div class="flex justify-between">
+                    <p
+                      class="px-3 py-0.5 rounded-full bg-orange-500 text-[12px] text-white"
+                    >
+                      Network
+                    </p>
+                    <p class="flex items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M12.5 5.83332L7.08333 11.25C6.39297 11.9403 6.39297 13.0596 7.08333 13.75C7.77369 14.4403 8.89297 14.4403 9.58333 13.75L15 8.33332C16.3807 6.95261 16.3807 4.71404 15 3.33332C13.6193 1.95261 11.3807 1.95261 10 3.33332L4.58333 8.74999C2.51226 10.8211 2.51226 14.1789 4.58333 16.25C6.6544 18.3211 10.0123 18.3211 12.0833 16.25L17.5 10.8333"
+                          stroke="#202842"
+                          stroke-width="1.25"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span class="text-[12px]">9</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
