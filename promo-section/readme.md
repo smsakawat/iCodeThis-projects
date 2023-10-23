@@ -1,3 +1,3 @@
 # Promo Section Challenge
 
-Checkout the submission - [click here](https://icodethis.com/submissions/44623)
+Check out the submission - [here](https://icodethis.com/submissions/44623)

@@ -25,7 +25,7 @@
   >
     <!-- Card -->
     <div
-      class="px-8 md:px-12 py-6 max-w-lg bg-[#222832] rounded text-slate-200 shadow-[8px_8px_16px_rgba(0 0 0 / .22)]"
+      class="px-8 md:px-12 py-6 max-w-lg bg-[#222832] rounded text-slate-200 shadow-[8px_8px_16px_rgba(0 0 0 / .22)] animate__animated animate__zoomInUp"
     >
       <div class="flex flex-col gap-8 items-center">
         <figure>
@@ -47,9 +47,39 @@
           </p>
           <div>
             <button
-              class="group relative bg-white font-medium px-6 py-2 overflow-hidden rounded-full text-slate-800 hover:scale-110 hover:bg-[#1d222c] hover:text-white hover:shadow-xl hover:shadow-slate-100/20 transition duration-300"
+              class="group relative bg-white font-medium px-6 py-2 rounded-full text-slate-800 hover:scale-110 hover:bg-[#1d222c] hover:text-white hover:shadow-xl hover:shadow-slate-100/20 transition duration-300"
             >
               Get pro for 50%
+              <div
+                class="w-full h-full opacity-0 group-hover:opacity-100 transition-all duration-500"
+              >
+                <div
+                  class="absolute w-9 h-9 top-1/2 right-1/2 -translate-y-1/2 bg-amber-500 translate-x-1/2 group-hover:right-0 transition-all duration-500 rounded-tr-full rounded-bl-full rounded-tl-full -rotate-45 shadow-[0px_0px_10px_4px_#f59e0b]"
+                >
+                  <div
+                    class="absolute rounded-tr-full rounded-bl-full rounded-tl-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-amber-400 w-8 h-8 shadow-[0px_0px_6px_4px_#facc15]"
+                  >
+                    <div
+                      class="absolute rounded-tr-full rounded-bl-full rounded-tl-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white w-4 h-4 shadow-[0px_0px_8px_4px_#fff]"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-full h-full opacity-0 group-hover:opacity-100 transition-all duration-500"
+              >
+                <div
+                  class="absolute w-9 h-9 top-1/2 left-1/2 -translate-y-1/2 bg-amber-500 -translate-x-1/2 group-hover:-left-0 transition-all duration-500 rounded-tr-full rounded-bl-full rounded-br-full -rotate-45 shadow-[0px_0px_10px_4px_#f59e0b]"
+                >
+                  <div
+                    class="absolute rounded-tr-full rounded-bl-full rounded-br-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-amber-400 w-8 h-8 shadow-[0px_0px_6px_4px_#facc15]"
+                  >
+                    <div
+                      class="absolute rounded-tr-full rounded-bl-full rounded-br-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white w-4 h-4 shadow-[0px_0px_8px_4px_#fff]"
+                    ></div>
+                  </div>
+                </div>
+              </div>
             </button>
           </div>
         </div>
@@ -57,14 +87,14 @@
           class="bg-[#1d222c] p-6 rounded text-center hover:cursor-pointer hover:shadow-2xl hover:shadow-slate-100/20 animate__animated animate__backInRight"
         >
           <p class="mb-3">Special promotion price</p>
-          <p class="mb-1 text-sm">$4.50 per month, billed anually.</p>
-          <p class="text-sm">
+          <p class="mb-1 text-[12px]">$4.50 per month, billed anually.</p>
+          <p class="text-[12px]">
             Over 70 hours of course content. Cancel anytime.
           </p>
         </div>
       </div>
     </div>
-
-    <script src="main.js"></script>
   </body>
+
+  <script src="main.js"></script>
 </html>
