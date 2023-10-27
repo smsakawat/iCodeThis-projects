@@ -1,92 +1,111 @@
 <html>
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link
-         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
-         rel="stylesheet">
-      <style>
-         .font-raleway{
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+   <style>
+      .font-raleway {
          font-family: 'Open Sans', sans-serif;
-         }
-         .font-opensans{
+      }
+
+      .font-opensans {
          font-family: 'Raleway', sans-serif;
-         }
-      </style>
-      <!-- Remove the line below if you don't want to use TailwindCSS -->
-      <script src="https://cdn.tailwindcss.com"></script>
-   </head>
-   <!-- Change code below this line -->
-   <body class="font-raleway bg-blue-100 text-[#3F415A] flex flex-col items-center justify-center min-h-screen">
-      <main class="max-w-5xl">
-         <section class="flex flex-col md:flex-row gap-8 items-center md:items-stretch justify-center">
-            <div class="max-w-xs bg-[#f8f9fd] p-8 flex flex-col justify-between items-center rounded-md shadow-md hover:-translate-y-1.5 transition-all duration-300 hover:shadow-2xl">
-               <div>
-                  <img src="https://i.imgur.com/6xphOlo.png" alt="onboarding image" class="w-full mb-6" >
-                  <p class="text-center text-lg font-bold leading-6 mb-4">Connect multiple <br>accounts</br></p>
-                  <p class="text-center text-[#65677b]">Stay connected to any platform you are used to. Starting from Twitter, Instagram,
-                     Slack or whatever.
-                  </p>
-               </div>
-               <div class="w-full flex items-center justify-between my-6 md:my-8">
-                  <button class=" text-[#9FA1AE] hover:text-slate-600 font-medium transition">Skip</button>
-                  <button class="group relative overflow-hidden bg-[#FA9B64] px-3 z-20 py-3.5 rounded-br-xl shadow-[9px_9px_0_#fee1d1] hover:shadow-[13px_13px_0_#fdcdb2] transition-all duration-300 before:absolute before:inset-0 before:bg-[#e18c5a] before:-z-10 before:scale-0 before:origin-top-left hover:before:scale-100 before:transition-all before:duration-300">
-                     <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:translate-x-1 group-hover:translate-y-1 group-hover:rotate-45 transition-all duration-200" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
-                        stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M5 12l14 0"></path>
-                        <path d="M13 18l6 -6"></path>
-                        <path d="M13 6l6 6"></path>
-                     </svg>
-                  </button>
-               </div>
+      }
+   </style>
+   <!-- Remove the line below if you don't want to use TailwindCSS -->
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!-- Change code below this line -->
+
+<body
+   class="font-raleway bg-blue-100 text-[#3F415A] flex flex-col items-center justify-center min-h-screen my-4 md:my-0">
+   <main class="max-w-5xl">
+      <section class="flex flex-col md:flex-row gap-8 items-center md:items-stretch justify-center">
+         <div
+            class="max-w-xs bg-[#f8f9fd] p-8 flex flex-col justify-between items-center rounded-md shadow-md hover:-translate-y-1.5 transition-all duration-300 hover:shadow-2xl">
+            <div>
+               <img src="https://i.imgur.com/6xphOlo.png" alt="onboarding image" class="w-full mb-6">
+               <p class="text-center text-lg font-bold leading-6 mb-4">Connect multiple <br>accounts</br></p>
+               <p class="text-center text-[#65677b]">Stay connected to any platform you are used to. Starting from
+                  Twitter, Instagram,
+                  Slack or whatever.
+               </p>
             </div>
-            <div class="max-w-xs bg-[#f8f9fd] p-8 flex flex-col items-center justify-between rounded-md shadow-md hover:-translate-y-1.5 transition-all duration-300 hover:shadow-2xl">
-               <div>
-                  <img src="https://i.imgur.com/Nyf1hom.png" alt="onboarding image" class="w-full mb-6" >
-                  <p class="text-center text-lg font-bold leading-6 mb-4">Smart messaging<br>system</br></p>
-                  <p class="text-center text-[#65677b]">View your messages without leaving the video you currently watched.</p>
-               </div>
-               <div class="w-full flex items-center justify-between my-6 md:my-8">
-                  <button class=" text-[#9FA1AE] hover:text-slate-600 font-medium transition">Skip</button>
-                  <button class="group relative overflow-hidden bg-[#FA9B64] px-3 z-20 py-3.5 rounded-br-xl shadow-[9px_9px_0_#fee1d1] hover:shadow-[13px_13px_0_#fdcdb2] transition-all duration-300 before:absolute before:inset-0 before:bg-[#e18c5a] before:-z-10 before:scale-0 before:origin-top-left hover:before:scale-100 before:transition-all before:duration-300">
-                     <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:translate-x-1 group-hover:translate-y-1 group-hover:rotate-45 transition-all duration-200" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
-                        stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M5 12l14 0"></path>
-                        <path d="M13 18l6 -6"></path>
-                        <path d="M13 6l6 6"></path>
-                     </svg>
-                  </button>
-               </div>
+            <div class="w-full flex items-center justify-between my-6 md:my-8">
+               <button class=" text-[#9FA1AE] hover:text-slate-600 font-medium transition">Skip</button>
+               <button
+                  class="group relative overflow-hidden bg-[#FA9B64] px-3 z-20 py-3.5 rounded-br-xl shadow-[9px_9px_0_#fee1d1] hover:shadow-[13px_13px_0_#fdcdb2] transition-all duration-300 before:absolute before:inset-0 before:bg-[#e18c5a] before:-z-10 before:scale-0 before:origin-top-left hover:before:scale-100 before:transition-all before:duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                     class="group-hover:translate-x-1 group-hover:translate-y-1 group-hover:rotate-45 transition-all duration-200"
+                     width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none"
+                     stroke-linecap="round" stroke-linejoin="round">
+                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                     <path d="M5 12l14 0"></path>
+                     <path d="M13 18l6 -6"></path>
+                     <path d="M13 6l6 6"></path>
+                  </svg>
+               </button>
             </div>
-            <div class="max-w-xs bg-[#f8f9fd] p-8 flex flex-col items-center justify-between rounded-md shadow-md hover:-translate-y-1.5 transition-all duration-300 hover:shadow-2xl">
-               <div>
-                  <img src="https://i.imgur.com/dr40eFh.png" alt="onboarding image" class="w-full mb-6" >
-                  <p class="text-center text-lg font-bold leading-6 mb-4">Instant data
-                     <br>analysis</br>
-                  </p>
-                  <p class="text-center text-[#65677b]">View and analyse all your activities grouped systematically for you to get
-                     conclusions.
-                  </p>
-               </div>
-               <div class="w-full flex items-center justify-center my-6 md:my-8">
-                  <button class="group flex items-center justify-center gap-2 relative overflow-hidden bg-[#FA9B64] px-3 z-20 py-3.5 rounded-br-xl shadow-[9px_9px_0_#fee1d1] hover:shadow-[13px_9px_0_#fdcdb2] transition-all duration-300 before:absolute before:inset-0 before:bg-[#e18c5a] before:-z-10 before:scale-0 before:origin-top-left hover:before:scale-100 before:transition-all before:duration-300">
-                     <span class="font-opensans font-medium text-white">Get started</span>
-                     <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:translate-x-1 transition-all duration-200" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
-                        stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M5 12l14 0"></path>
-                        <path d="M13 18l6 -6"></path>
-                        <path d="M13 6l6 6"></path>
-                     </svg>
-                  </button>
-               </div>
+         </div>
+         <div
+            class="max-w-xs bg-[#f8f9fd] p-8 flex flex-col items-center justify-between rounded-md shadow-md hover:-translate-y-1.5 transition-all duration-300 hover:shadow-2xl">
+            <div>
+               <img src="https://i.imgur.com/Nyf1hom.png" alt="onboarding image" class="w-full mb-6">
+               <p class="text-center text-lg font-bold leading-6 mb-4">Smart messaging<br>system</br></p>
+               <p class="text-center text-[#65677b]">View your messages without leaving the video you currently
+                  watched.</p>
             </div>
-         </section>
-      </main>
-   </body>
-   <!-- Change code above this line -->
+            <div class="w-full flex items-center justify-between my-6 md:my-8">
+               <button class=" text-[#9FA1AE] hover:text-slate-600 font-medium transition">Skip</button>
+               <button
+                  class="group relative overflow-hidden bg-[#FA9B64] px-3 z-20 py-3.5 rounded-br-xl shadow-[9px_9px_0_#fee1d1] hover:shadow-[13px_13px_0_#fdcdb2] transition-all duration-300 before:absolute before:inset-0 before:bg-[#e18c5a] before:-z-10 before:scale-0 before:origin-top-left hover:before:scale-100 before:transition-all before:duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                     class="group-hover:translate-x-1 group-hover:translate-y-1 group-hover:rotate-45 transition-all duration-200"
+                     width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none"
+                     stroke-linecap="round" stroke-linejoin="round">
+                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                     <path d="M5 12l14 0"></path>
+                     <path d="M13 18l6 -6"></path>
+                     <path d="M13 6l6 6"></path>
+                  </svg>
+               </button>
+            </div>
+         </div>
+         <div
+            class="max-w-xs bg-[#f8f9fd] p-8 flex flex-col items-center justify-between rounded-md shadow-md hover:-translate-y-1.5 transition-all duration-300 hover:shadow-2xl">
+            <div>
+               <img src="https://i.imgur.com/dr40eFh.png" alt="onboarding image" class="w-full mb-6">
+               <p class="text-center text-lg font-bold leading-6 mb-4">Instant data
+                  <br>analysis</br>
+               </p>
+               <p class="text-center text-[#65677b]">View and analyse all your activities grouped systematically
+                  for you to get
+                  conclusions.
+               </p>
+            </div>
+            <div class="w-full flex items-center justify-center my-6 md:my-8">
+               <button
+                  class="group flex items-center justify-center gap-2 relative overflow-hidden bg-[#FA9B64] px-3 z-20 py-3.5 rounded-br-xl shadow-[9px_9px_0_#fee1d1] hover:shadow-[13px_9px_0_#fdcdb2] transition-all duration-300 before:absolute before:inset-0 before:bg-[#e18c5a] before:-z-10 before:scale-0 before:origin-top-left hover:before:scale-100 before:transition-all before:duration-300">
+                  <span class="font-opensans font-medium text-white">Get started</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:translate-x-1 transition-all duration-200"
+                     width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none"
+                     stroke-linecap="round" stroke-linejoin="round">
+                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                     <path d="M5 12l14 0"></path>
+                     <path d="M13 18l6 -6"></path>
+                     <path d="M13 6l6 6"></path>
+                  </svg>
+               </button>
+            </div>
+         </div>
+      </section>
+   </main>
+</body>
+<!-- Change code above this line -->
+
 </html>
