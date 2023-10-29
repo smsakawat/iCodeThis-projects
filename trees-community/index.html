@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
     <style>
       .font-poppins {
         font-family: "Poppins", sans-serif;
@@ -18,8 +19,8 @@
     <style type="text/tailwindcss">
       @layer utilities {
         .community-member {
-          @apply relative flex w-40 flex-col items-center justify-start gap-4 rounded-lg bg-[#0a1015] py-8 transition
-            before:absolute before:inset-x-[29%] before:top-[75%] before:bottom-[15%] before:rounded-full before:border before:border-emerald-700 hover:cursor-pointer hover:shadow-[0px_16px_32px]
+          @apply relative flex w-40 flex-col items-center justify-start gap-4 shrink-0 rounded-lg bg-[#0a1015] py-8 transition-all  duration-200 delay-[0.2s]
+            before:absolute before:inset-x-[29%] before:top-[74%] before:bottom-[15%] before:rounded-full before:border before:border-emerald-700 hover:cursor-pointer hover:shadow-[0px_16px_32px]
             hover:shadow-emerald-600/40 hover:before:inset-0 hover:before:rounded-md hover:before:bg-emerald-700/10;
         }
       }
@@ -28,7 +29,7 @@
 
   <!-- Change code below this line -->
   <body
-    class="font-poppins grid min-h-screen place-items-center bg-[#0f1112] text-slate-300"
+    class="font-poppins grid min-h-screen place-items-center bg-[#0f1112] text-slate-300 shadow-xl"
   >
     <main>
       <section
@@ -53,9 +54,9 @@
               alt="Ciara Lee"
               class="h-16 w-16 rounded-full object-cover object-center"
             />
-            <p class="text-center text-lg font-medium">Ciara Lee</p>
+            <p class="text-center font-medium">Ciara Lee</p>
             <p
-              class="rounded-full px-2 py-0.5 text-xs font-bold text-emerald-800"
+              class="rounded-full px-2 py-0.5 text-xs font-bold text-emerald-700"
             >
               20 Trees
             </p>
@@ -66,9 +67,9 @@
               alt="Jeffrey Perrine"
               class="h-16 w-16 rounded-full object-cover object-center"
             />
-            <p class="text-center text-lg font-medium">Jeffrey Perrine</p>
+            <p class="text-center font-medium">Jeffrey Perrine</p>
             <p
-              class="rounded-full px-2 py-0.5 text-xs font-bold text-emerald-800"
+              class="rounded-full px-2 py-0.5 text-xs font-bold text-emerald-700"
             >
               64 Trees
             </p>
@@ -79,9 +80,9 @@
               alt="Anette Roberts"
               class="h-16 w-16 rounded-full object-cover object-center"
             />
-            <p class="text-center text-lg font-medium">Anette Roberts</p>
+            <p class="text-center font-medium">Anette Roberts</p>
             <p
-              class="rounded-full px-2 py-0.5 text-xs font-bold text-emerald-800"
+              class="rounded-full px-2 py-0.5 text-xs font-bold text-emerald-700"
             >
               29 Trees
             </p>
@@ -92,9 +93,9 @@
               alt="Jeremy Brown"
               class="h-16 w-16 rounded-full object-cover object-center"
             />
-            <p class="text-center text-lg font-medium">Jeremy Brown</p>
+            <p class="text-center font-medium">Jeremy Brown</p>
             <p
-              class="rounded-full px-2 py-0.5 text-xs font-bold text-emerald-800"
+              class="rounded-full px-2 py-0.5 text-xs font-bold text-emerald-700"
             >
               83 Trees
             </p>

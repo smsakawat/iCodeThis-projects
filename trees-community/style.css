@@ -1,0 +1,13 @@
+.community-member {
+  transform-style: preserve-3d;
+  transform: perspective(50rem) rotateY(-25deg);
+}
+
+.community-member:hover {
+  transform: none;
+}
+
+.community-member::before {
+  transition: background 0.2s ease-in-out, inset 0.2s ease-in-out,
+    border-radius 0.12s;
+}
