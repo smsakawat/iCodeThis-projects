@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .community-member {
+          @apply relative flex w-40 flex-col items-center justify-start gap-4 rounded-lg bg-[#0a1015] py-8 transition
+            before:absolute before:inset-x-[29%] before:top-[75%] before:bottom-[15%] before:rounded-full before:border before:border-emerald-700 hover:cursor-pointer hover:shadow-[0px_16px_32px]
+            hover:shadow-emerald-600/40 hover:before:inset-0 hover:before:rounded-md hover:before:bg-emerald-700/10;
+        }
+      }
+    </style>
+  </head>
+
+  <!-- Change code below this line -->
+  <body
+    class="font-poppins grid min-h-screen place-items-center bg-[#0f1112] text-slate-300"
+  >
+    <main>
+      <section
+        class="flex flex-col items-center gap-10 rounded-md bg-[#0c141b] px-10 py-8"
+      >
+        <div class="flex flex-col items-center">
+          <img
+            src="https://i.imgur.com/tBE4F3s.png"
+            alt="gree tree icon"
+            class="w-56"
+          />
+          <p class="mb-2 text-center text-2xl font-bold">Join our community</p>
+          <p class="max-w-xs text-center text-sm text-slate-400">
+            Help us plant 20 million tress around the globe by january 1st,
+            2020.
+          </p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-6">
+          <div class="community-member">
+            <img
+              src="https://images.unsplash.com/photo-1517677129300-07b130802f46?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fGhhcHB5JTIwd29tYW58ZW58MHx8MHx8fDA%3D"
+              alt="Ciara Lee"
+              class="h-16 w-16 rounded-full object-cover object-center"
+            />
+            <p class="text-center text-lg font-medium">Ciara Lee</p>
+            <p
+              class="rounded-full px-2 py-0.5 text-xs font-bold text-emerald-800"
+            >
+              20 Trees
+            </p>
+          </div>
+          <div class="community-member">
+            <img
+              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fGhhcHB5JTIwbWFufGVufDB8fDB8fHww"
+              alt="Jeffrey Perrine"
+              class="h-16 w-16 rounded-full object-cover object-center"
+            />
+            <p class="text-center text-lg font-medium">Jeffrey Perrine</p>
+            <p
+              class="rounded-full px-2 py-0.5 text-xs font-bold text-emerald-800"
+            >
+              64 Trees
+            </p>
+          </div>
+          <div class="community-member">
+            <img
+              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhhcHB5JTIwd29tYW58ZW58MHx8MHx8fDA%3D"
+              alt="Anette Roberts"
+              class="h-16 w-16 rounded-full object-cover object-center"
+            />
+            <p class="text-center text-lg font-medium">Anette Roberts</p>
+            <p
+              class="rounded-full px-2 py-0.5 text-xs font-bold text-emerald-800"
+            >
+              29 Trees
+            </p>
+          </div>
+          <div class="community-member">
+            <img
+              src="https://images.unsplash.com/photo-1496345875659-11f7dd282d1d?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGhhcHB5JTIwbWFufGVufDB8fDB8fHww"
+              alt="Jeremy Brown"
+              class="h-16 w-16 rounded-full object-cover object-center"
+            />
+            <p class="text-center text-lg font-medium">Jeremy Brown</p>
+            <p
+              class="rounded-full px-2 py-0.5 text-xs font-bold text-emerald-800"
+            >
+              83 Trees
+            </p>
+          </div>
+        </div>
+        <button
+          class="transition-full relative z-10 overflow-hidden rounded-md border border-emerald-700 px-10 py-3 text-center text-lg font-bold text-emerald-700 duration-200 before:absolute before:inset-0 before:-z-10 before:translate-y-full before:bg-gradient-to-b before:from-transparent before:via-emerald-600/30 before:to-transparent before:transition-all before:duration-500 hover:scale-95 hover:shadow-[0px_0px_48px] hover:shadow-emerald-700/60 hover:before:-translate-y-full"
+        >
+          Join Now!
+        </button>
+      </section>
+    </main>
+  </body>
+  <!-- Change code above this line -->
+</html>
