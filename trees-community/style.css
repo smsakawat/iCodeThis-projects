@@ -1,12 +1,101 @@
+.tree-box{
+  transform: scale(0);
+  visibility: hidden;
+}
+
+.show.tree-box{
+  transform: scale(1);
+  visibility: visible;
+}
+
+.heading-box{
+  transform: scale(0);
+  visibility: hidden;
+}
+
+.show.heading-box{
+  transform: scale(1);
+  visibility: visible;
+}
+
+.animate-tree {
+  transform-origin: bottom center;
+  animation: treeLoad 1s ease-out 0.6s;
+}
+
+.main-title{
+animation: moveLeft 0.5s ease-out 0.25s;
+}
+
+.main-description{
+  animation: moveRight 0.5s ease-out 0.25s;
+}
+
+@keyframes moveLeft{
+  0%{
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes moveRight{
+  0%{
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+@keyframes treeLoad {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  30%{
+    transform: scaleY(0.3);
+    opacity: 0.3;
+    visiblity: visible;
+  }
+
+  60% {
+    transform: scaleY(0.6);
+    opacity: 0.6
+    visiblity: visible;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    visiblity: visible;
+  }
+}
+
 .community-member {
   transform-style: preserve-3d;
-  transform: perspective() rotateY(-25deg);50rem
+  transform: perspective(50rem) rotateY(-25deg);
 }
 
 .community-member:hover {
   transform: none;
 }
 
-.community-member::before{
-  transition: background 0.2s ease-in-out,inset 0.2s ease-in-out,border-radius 0.12s;
+.community-member::before {
+  transition: background 0.2s ease-in-out, inset 0.2s ease-in-out,
+    border-radius 0.12s;
 }

@@ -16,3 +16,17 @@ modal.addEventListener("click", (e) => {
     e.clientX <= area.left + area.width;
   if (!inModal) modal.close();
 });
+
+// Scale Tree
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(() => {
+    const treeBox = document.querySelector(".tree-box");
+
+    treeBox.classList.add("show");
+  }, 600);
+
+  setTimeout(() => {
+    const headingBox = document.querySelector(".heading-box");
+    headingBox.classList.add("show");
+  }, 250);
+});
