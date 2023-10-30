@@ -8,7 +8,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
     <style>
       .font-poppins {
         font-family: "Poppins", sans-serif;
@@ -102,12 +101,21 @@
           </div>
         </div>
         <button
+          id="btn-join"
           class="transition-full relative z-10 overflow-hidden rounded-md border border-emerald-700 px-10 py-3 text-center text-lg font-bold text-emerald-700 duration-200 before:absolute before:inset-0 before:-z-10 before:translate-y-full before:bg-gradient-to-b before:from-transparent before:via-emerald-600/30 before:to-transparent before:transition-all before:duration-500 hover:scale-95 hover:shadow-[0px_0px_48px] hover:shadow-emerald-700/60 hover:before:-translate-y-full"
         >
           Join Now!
         </button>
       </section>
     </main>
+    <dialog
+      id="modal"
+      class="p-4 bg-emerald-900 rounded ring-1 ring-green-800 text-slate-300 text-sm backdrop:backdrop-blur shadow-lg shadow-emerald-600/20"
+    >
+      🌿🌲 Welcome to the lush grove of knowledge! 🌳🍀
+    </dialog>
+
+    <script src="./main.js"></script>
   </body>
   <!-- Change code above this line -->
 </html>
