@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .font-noto{
+            font-family: 'Noto Sans', sans-serif;
+        }
+    </style>
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+    @layer utilities {
+      .onboarding-item {
+       @apply overflow-hidden relative z-10 shrink-0 w-72 px-10 flex flex-col items-center justify-between bg-white py-10 gap-16
+    rounded-xl before:absolute before:bg-[#ebf2ff] before:w-[140%] before:h-[200%] before:left-1/2 before:-translate-x-[48%]
+    before:-top-1/2 before:-translate-y-1/2 before:-z-10 before:rounded-full after:absolute after:bg-[#f7faff]
+    after:w-[150%] after:h-[206%] after:left-1/2 after:-translate-x-[44%] after:-z-20 after:-top-1/2 after:-translate-y-1/2
+    after:rounded-full;
+      }
+    }
+  </style>
+
+</head>
+
+<!-- Change code below this line -->
+<body class="bg-[#d1e2fe] flex justify-center items-center min-h-screen font-noto">
+<section class="flex gap-8 justify-center flex-wrap my-6 md:my-0">
+    <div class="onboarding-item">
+        <header class="pt-6">
+            <figure>
+                <img src="https://i.imgur.com/U9K59rC.png" alt="" class="w-24 mx-auto mb-1">
+            </figure>
+            <p class="text-xl font-bold text-blue-600 w-44 text-center">Find campaigns near you</p>
+        </header>
+        <p class="text-gray-900 text-center ">Embark on a journey to discover local campaigns near you.</p>
+        <div class="flex items-center gap-8">
+            <button class="text-sm text-gray-600 bg-gray-200 px-6 py-2 rounded-full cursor-pointer font-semibold  transition hover:bg-gray-300 hover:scale-95">Skip</button>
+            <button class="text-sm px-6 py-2 bg-blue-600 rounded-full text-white font-semibold hover:bg-blue-700 transition hover:scale-95">Next</button>
+        </div>
+        <div class="absolute flex items-center justify-center left-1/2 -translate-x-1/2 top-3/4 gap-2">
+            <span class="w-2 h-2 bg-blue-500 rounded-full cursor-pointer"></span>
+            <span class="w-2 h-2 bg-blue-100 rounded-full cursor-pointer"></span>
+            <span class="w-2 h-2 bg-blue-100 rounded-full cursor-pointer"></span>
+        </div>
+    </div>
+    <div
+        class="onboarding-item"">
+        <header class="pt-6">
+            <figure>
+                <img src="https://i.imgur.com/CRT0Yz5.png" alt="" class="w-24 mx-auto mb-1">
+            </figure>
+            <p class="text-xl font-bold text-blue-600 w-44 text-center">Reserve directly from your phone</p>
+        </header>
+        <p class="text-gray-900 text-center">Effortlessly book reservations right from your mobile device.
+        </p>
+        <div class="flex items-center gap-8">
+            <button class="text-sm text-gray-600 bg-gray-200 px-6 py-2 rounded-full cursor-pointer font-semibold  transition hover:bg-gray-300 hover:scale-95">Skip</button>
+            <button class="text-sm px-6 py-2 bg-blue-600 rounded-full text-white font-semibold hover:bg-blue-700 transition hover:scale-95">Next</button>
+        </div>
+        <div class="absolute flex items-center justify-center left-1/2 -translate-x-1/2 top-3/4 gap-2">
+            <span class="w-2 h-2 bg-blue-100 rounded-full cursor-pointer"></span>
+            <span class="w-2 h-2 bg-blue-500 rounded-full cursor-pointer"></span>
+            <span class="w-2 h-2 bg-blue-100 rounded-full cursor-pointer"></span>
+        </div>
+    </div>
+    <div
+        class="onboarding-item"">
+        <header class="pt-6">
+            <figure>
+                <img src="https://i.imgur.com/oh85gGB.png" alt="" class="w-24 mx-auto mb-1">
+            </figure>
+            <p class="text-xl font-bold text-blue-600 w-44 text-center">Get directions to the locations</p>
+        </header>
+        <p class="text-gray-900 text-center">Receive step-by-step directions to your desired destinations.
+        </p>
+        <div class="flex items-center gap-8">
+            <button class="text-sm text-gray-600 bg-gray-200 px-6 py-2 rounded-full cursor-pointer font-semibold  transition hover:bg-gray-300 hover:scale-95">Skip</button>
+            <button class="text-sm px-6 py-2 bg-blue-600 rounded-full text-white font-semibold hover:bg-blue-700 transition hover:scale-95">Next</button>
+        </div>
+        <div class="absolute flex items-center justify-center left-1/2 -translate-x-1/2 top-3/4 gap-2">
+            <span class="w-2 h-2 bg-blue-100 rounded-full cursor-pointer"></span>
+            <span class="w-2 h-2 bg-blue-100 rounded-full cursor-pointer"></span>
+            <span class="w-2 h-2 bg-blue-500 rounded-full cursor-pointer"></span>
+        </div>
+    </div>
+</section>
+</body>
+<!-- Change code above this line -->
+
+</html>
